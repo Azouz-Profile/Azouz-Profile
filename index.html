@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AZOUZ PROFILE </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap">
+    <style>
+        body {
+            background-color: #347C2C; /* لون زيتوني غامق جديد */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .circle {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.3); /* دائرة شفافة */
+            border-radius: 50%;
+            animation: moveCircle 10s linear infinite alternate;
+        }
+
+        #greenButton {
+            background-color: #006400; /* لون أخضر غامق */
+            color: #fff; /* لون أبيض للنص */
+            padding: 15px 30px; /* زيادة حجم الزر */
+            border: none;
+            border-radius: 10px; /* حواف ناعمة */
+            font-size: 18px; /* زيادة حجم النص */
+            font-family: 'Cairo', sans-serif; /* تحديد خط يدعم اللغة العربية */
+            cursor: pointer;
+        }
+
+        @keyframes moveCircle {
+            0% {
+                transform: translate(-50%, -50%);
+            }
+            100% {
+                transform: translate(50%, 50%);
+            }
+        }
+      #profileImage {
+            width: 80px; /* حجم الصورة الشخصية المقللة */
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            top: 10px; /* موقع الصورة الشخصية من الأعلى */
+            left: 5px; /* موقع الصورة الشخصية من اليمين */
+            border: 2px solid #57E964; /* إطار بيضاء حول الصورة الشخصية */
+        }
+ </style>
+</head>
+<body dir="rtl">
+    <img src="https://cdn.discordapp.com/attachments/1139991182768885760/1216485438198386808/IMG_6432.jpg?ex=66008f59&is=65ee1a59&hm=84b68c211bdf7c53667908a3015e7891a23b6777d1ac43d17fe18fb92b2ef95c" alt="الصورة الشخصية" id="profileImage">
+    </style>
+</head>
+<body dir="rtl">
+    <div class="background">
+        <!-- يمكنك تكرار الدوائر أو إضافة مزيد حسب الرغبة -->
+        <div class="circle" style="top: 20%; left: 30%; width: 100px; height: 100px;"></div>
+        <div class="circle" style="top: 50%; left: 70%; width: 150px; height: 150px;"></div>
+    </div>
+
+    <button id="greenButton" onclick="redirectToSite()">اضغط هنا</button>
+
+    <script>
+        function redirectToSite() {
+            // يمكنك تغيير الرابط أدناه إلى الموقع الذي تريده
+            window.location.href = 'رابط الموقع الخاص بك';
+        }
+    </script>
+</body>
+</html>
